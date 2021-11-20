@@ -1,0 +1,275 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace;
+}
+
+body {
+  background-color: #fdbf00;
+}
+.wrapper {
+  width: 320px;
+  height: 470px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  position: relative;
+  height: 360px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+  box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+}
+.wrapper a {
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  padding: 12px 0;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+  box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+}
+.cake {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+.bottom-layer,
+.top-layer,
+.middle-layer {
+  height: 80px;
+  width: 240px;
+  position: relative;
+  margin: auto;
+  background-repeat: repeat;
+  background-size: 100% 100%, 60px 100px;
+  background-position: 28px 0;
+  background-image: -o-linear-gradient(
+      transparent 50px,
+      #fedbab 50px,
+      #fedbab 60px,
+      transparent 60px
+    ),
+    -o-radial-gradient(30px 5px, circle, #994c10 30px, #fcbf29 31px);
+  background-image: linear-gradient(
+      transparent 50px,
+      #fedbab 50px,
+      #fedbab 60px,
+      transparent 60px
+    ),
+    radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+  border-radius: 10px 10px 0 0;
+}
+.middle-layer {
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  top: 72px;
+  -webkit-animation: rise-1 1s forwards;
+  animation: rise-1 1s forwards;
+}
+@-webkit-keyframes rise-1 {
+  100% {
+    top: 7px;
+  }
+}
+@keyframes rise-1 {
+  100% {
+    top: 7px;
+  }
+}
+.top-layer {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  top: 144px;
+  -webkit-animation: rise-2 2s 2s forwards;
+  animation: rise-2 1s 1s forwards;
+}
+@-webkit-keyframes rise-2 {
+  100% {
+    top: 26px;
+  }
+}
+@keyframes rise-2 {
+  100% {
+    top: 26px;
+  }
+}
+.candle {
+  background: -o-repeating-linear-gradient(
+    45deg,
+    #fd3018 0,
+    #fd3018 5px,
+    #ffa89e 5px,
+    #ffa89e 10px
+  );
+  background: repeating-linear-gradient(
+    45deg,
+    #fd3018 0,
+    #fd3018 5px,
+    #ffa89e 5px,
+    #ffa89e 10px
+  );
+  height: 45px;
+  width: 15px;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: rise-3 1s 4s forwards;
+  animation: rise-3 1s 2s forwards;
+}
+@-webkit-keyframes rise-3 {
+  100% {
+    bottom: 202px;
+  }
+}
+@keyframes rise-3 {
+  100% {
+    bottom: 202px;
+  }
+}
+.candle:after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-color: #ffb62d;
+  border-radius: 0 50% 50% 50%;
+  -webkit-transform: scale(0) rotate(45deg);
+  -ms-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+  bottom: 50px;
+  left: -0.5px;
+  -webkit-animation: flame 1.5s 5s forwards;
+  animation: flame 1.5s 3s forwards;
+}
+@-webkit-keyframes flame {
+  100% {
+    -webkit-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg);
+  }
+}
+@keyframes flame {
+  100% {
+    -webkit-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg);
+  }
+}
+/* wish */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+
+.box {
+  position: fixed;
+  width: 320px;
+  height: 170px;
+  background-color: white;
+  left: 40%;
+  top: 33%;
+  background-color: pink;
+  border-radius: 8px;
+}
+
+.text {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1.4;
+}
+
+.text-wish {
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+.text-btn {
+  text-align: center;
+  margin-left: 42%;
+  margin-top: 10px;
+  width: 50px;
+  height: 25px;
+  background-color: plum;
+  border-radius: 3px;
+  -webkit-appearance: none;
+}
+
+.wish {
+  display: none;
+}
+
+.wish:checked ~ .overlay {
+  display: block;
+}
+
+.fa-doutone {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Iphone 5/5s */
+@media screen and (max-width: 321px) {
+  .box {
+    left: 3%;
+    width: 300px;
+  }
+}
+
+/* Iphone 6/7/8/X */
+@media screen and (min-width: 374px) and (max-width: 413px) {
+  .box {
+    left: 7.5%;
+  }
+}
+
+/* Iphone 6/7/8 + */
+@media screen and (min-width: 413px) and (max-width: 1023px) {
+  .box {
+    left: 11%;
+  }
+}

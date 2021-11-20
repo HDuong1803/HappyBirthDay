@@ -1,0 +1,65 @@
+body {
+  background-color: pink;
+}
+
+html {
+  font-family: monospace;
+}
+
+.text {
+  text-align: justify;
+  font-size: 22px;
+  text-align: center;
+}
+
+.gif {
+  margin-left: 39%;
+}
+
+.gif-boy {
+  width: 360px;
+}
+
+.bye {
+  text-align: center;
+  color: darkblue;
+}
+/* Iphone 5/5s */
+@media screen and (max-width: 321px) {
+  .text {
+    text-align: center;
+  }
+  .gif {
+    margin-left: 8%;
+  }
+  .gif-boy {
+    width: 255px;
+  }
+}
+
+/* Iphone 6/7/8/X */
+@media screen and (min-width: 374px) and (max-width: 413px) {
+  .text {
+    text-align: center;
+  }
+  .gif {
+    margin-left: 15%;
+  }
+  .gif-boy {
+    width: 255px;
+  }
+}
+/* Iphone 6/7/8 + */
+@media screen and (min-width: 414px) and (max-width: 1024px) {
+  .text {
+    text-align: center;
+  }
+  .gif {
+    margin-left: 18%;
+  }
+  .gif-boy {
+    width: 255px;
+  }
+}
+
+/* Iphone X */
